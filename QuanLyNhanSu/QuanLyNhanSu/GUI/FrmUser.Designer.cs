@@ -70,6 +70,7 @@
             this.btnSua.Size = new System.Drawing.Size(252, 43);
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -80,6 +81,7 @@
             this.btnThem.Size = new System.Drawing.Size(252, 43);
             this.btnThem.TabIndex = 12;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -90,6 +92,7 @@
             this.btnXoa.Size = new System.Drawing.Size(510, 43);
             this.btnXoa.TabIndex = 11;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnDong
             // 
@@ -100,6 +103,7 @@
             this.btnDong.Size = new System.Drawing.Size(510, 43);
             this.btnDong.TabIndex = 10;
             this.btnDong.Text = "Đóng chức năng";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // groupBox1
             // 

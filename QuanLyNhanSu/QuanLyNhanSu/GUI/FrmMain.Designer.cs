@@ -51,7 +51,6 @@
             this.barThongKeDangVien = new DevExpress.XtraBars.BarButtonItem();
             this.barThongKeSinhNhatTheoThang = new DevExpress.XtraBars.BarButtonItem();
             this.barQLChamCong = new DevExpress.XtraBars.BarButtonItem();
-            this.barUser = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -59,6 +58,7 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panelMain = new DevExpress.XtraEditors.PanelControl();
+            this.barUser = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             this.SuspendLayout();
@@ -245,6 +245,7 @@
             this.barThongKeDangVien.Id = 18;
             this.barThongKeDangVien.Name = "barThongKeDangVien";
             this.barThongKeDangVien.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barThongKeDangVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barThongKeDangVien_ItemClick);
             // 
             // barThongKeSinhNhatTheoThang
             // 
@@ -263,15 +264,6 @@
             this.barQLChamCong.Name = "barQLChamCong";
             this.barQLChamCong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barQLChamCong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barQLChamCong_ItemClick);
-            // 
-            // barUser
-            // 
-            this.barUser.Caption = "Quản lý người dùng";
-            this.barUser.Glyph = ((System.Drawing.Image)(resources.GetObject("barUser.Glyph")));
-            this.barUser.Id = 23;
-            this.barUser.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barUser.LargeGlyph")));
-            this.barUser.Name = "barUser";
-            this.barUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barUser_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -330,6 +322,15 @@
             this.panelMain.Size = new System.Drawing.Size(1246, 530);
             this.panelMain.TabIndex = 1;
             // 
+            // barUser
+            // 
+            this.barUser.Caption = "Quản lý người dùng";
+            this.barUser.Glyph = ((System.Drawing.Image)(resources.GetObject("barUser.Glyph")));
+            this.barUser.Id = 23;
+            this.barUser.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barUser.LargeGlyph")));
+            this.barUser.Name = "barUser";
+            this.barUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barUser_ItemClick);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,7 +342,6 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân sự";
-            this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).EndInit();
             this.ResumeLayout(false);

@@ -194,6 +194,16 @@ namespace QuanLyNhanSu
             frmtg.Show();
         }
 
+        private void barTinhLuong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //FrmTinhLuong frmtg = new FrmTinhLuong();
+            //frmtg.TopLevel = false;
+            //frmtg.Dock = DockStyle.Fill;
+            //panelMain.Controls.Clear();
+            //panelMain.Controls.Add(frmtg);
+            //frmtg.Show();
+        }
+
         private void barThongKeNhanVienSapNghiHuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmThongKeNhanVienSapNghiHuu frmtg = new FrmThongKeNhanVienSapNghiHuu();
@@ -202,6 +212,16 @@ namespace QuanLyNhanSu
             panelMain.Controls.Clear();
             panelMain.Controls.Add(frmtg);
             frmtg.Show();
+        }
+
+        private void barThongKeDangVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //FrmThongKeDangVien frmtg = new FrmThongKeDangVien();
+            //frmtg.TopLevel = false;
+            //frmtg.Dock = DockStyle.Fill;
+            //panelMain.Controls.Clear();
+            //panelMain.Controls.Add(frmtg);
+            //frmtg.Show();
         }
 
         private void barThongKeSinhNhatTheoThang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -233,10 +253,5 @@ namespace QuanLyNhanSu
             frmtg.Show();
         }
         #endregion
-
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
